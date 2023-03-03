@@ -1,0 +1,68 @@
+.navbar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  background: $fresh;
+  @include transOnly(250ms, ease-in-out);
+  .navbar-brand{}
+  #navbarNav{
+    .nav{
+      .nav-item{
+        padding: 0 20px;
+        .nav-link{
+          font-size: 1.5em;
+          position: relative;
+          color: $darkGray;
+          padding-left: 0;
+          padding-right: 0;
+          &:hover{
+            color: $black;
+            &::after{
+              transform: scaleX(1);
+              transform-origin: bottom;
+            }
+          }
+          &.active{
+            color: $black;
+            &::after{
+              transform: scaleX(1);
+              transform-origin: bottom;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-link::after {
+    bottom: 24%;
+    z-index: -1;
+    display: block;
+    height: 8px;
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    background: $sunshine;
+    display: block;
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+}
+
+.nav-link:hover::after {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1)
+}

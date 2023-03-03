@@ -4,13 +4,15 @@
   	<title>Joshua Stuart's Portfolio</title>
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"  />
+    <!-- Add favicon
+    <link rel="shortcut icon" href=".ico"> -->
     <link rel="stylesheet" href="assets/css/main.css">
     <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
-    <!-- Add favicon
-    <link rel="shortcut icon" href=".ico"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
     <!-- Add Analytics -->
     <!-- Add Meta properties -->
     <!-- Add Cookie Security popup -->
@@ -18,7 +20,58 @@
 
   </head>
 
-  <body>
+  <body id="home">
+    <div id="markers">
+      <span class="mbl">mb</span>
+      <span class="xsmall">xs</span>
+      <span class="small">sm</span>
+      <span class="medium">md</span>
+      <span class="large">lg</span>
+      <span class="xlarge">xl</span>
+    </div>
+
+    <!-- Add loading screen -->
+    <header id="header" class="hero">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">LOGO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#header">Home</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skillsIcons">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <h1 class="hero-name"><span class="underline--sunshine">Joshua Stuart</span></h1>
+        <h1 class="hero-subname">
+          <div class="rw-words rw-words-1">
+            <span>A Web Developer</span>
+            <span>A Dad</span>
+            <span>A Gamer</span>
+            <span>A Cook</span>
+            <span>A Football Fan</span>
+            <span>An Anime Lover</span>
+          </div>
+        </h1>
+      </div>
+      <div class="down">
+        <a href="#about">
+          <span class="material-symbols-outlined bounce">
+          keyboard_arrow_down
+          </span>
+        </a>
+      </div>
+    </header>
+
+
     <main></main>
     <footer></footer>
     <script type="text/javascript" src="assets/js/vendor/jquery.scrollflow.min.js"></script>

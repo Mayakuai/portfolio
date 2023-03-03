@@ -1,0 +1,87 @@
+@mixin size($width,$height){
+	width:$width;
+	height:$height;
+}
+
+
+@mixin breakpoint($bp: "xsmall"){
+
+  @if $bp == 'xsmall' {
+    @media only screen and (min-width:0px) { @content };
+  }
+  @if $bp == 'phone' {
+    @media only screen and (min-width:325px) { @content };
+  }
+  @if $bp == 'xphone' {
+    @media only screen and (min-width:480px) { @content };
+  }
+  @if $bp == 'small' {
+    @media only screen and (min-width:576px) { @content };
+  }
+  @if $bp == 'medium' {
+    @media only screen and (min-width:768px) { @content };
+  }
+  @if $bp == 'large' {
+    @media only screen and (min-width:992px) { @content };
+  }
+  @if $bp == 'larger' {
+    @media only screen and (min-width:1200px) { @content };
+  }
+  @if $bp == 'xlarge' {
+    @media only screen and (min-width:1400px) { @content };
+  }
+  @if $bp == 'super' {
+    @media only screen and (min-width:1600px) { @content };
+  }
+
+  @if $bp == 'adminbar' {
+    @media only screen and (min-width:783px) { @content };
+  }
+
+}
+
+@mixin transitions($transition...) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+@mixin rotate($deg...) {
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+@mixin transOnly($delay,$easing, $wait: 0s){
+  -webkit-transition-duration: $delay;
+  -moz-transition-duration: $delay;
+  -o-transition-duration: $delay;
+  transition-duration: $delay;
+
+  -webkit-timing-function: $easing;
+  -moz-transition-timing-function: $easing;
+   -o-transition-timing-function: $easing;
+  transition-timing-function: $easing;
+
+  -webkit-transition-delay: $wait;
+  -moz-transition-delay: $wait;
+  -o-transition-delay: $wait;
+  transition-delay: $wait;
+}
+
+@mixin shading($weight,$color){
+  -webkit-box-shadow: $weight $color;
+  -moz-box-shadow: $weight $color;
+  box-shadow: $weight $color;
+}
+
+@mixin opacity($strength) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$strength})";
+  filter: alpha(opacity=$strength);
+  -moz-opacity: $strength;
+  -khtml-opacity: $strength;
+  opacity: $strength;
+}
