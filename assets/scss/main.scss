@@ -1,2 +1,17 @@
+// Normalize CSS
+@import 'vendor/normalize';
+
+//  vendor styles
+@import 'vendor/bootstrap/bootstrap';
+
+// General Settings
+@import 'global/variables';
+@import 'global/mixins';
+@import 'global/fonts';
+@import 'global/animations';
+
 // Main Global Styles
 @import 'global/styles';
+
+// Content Specific
+@import 'components/layout';
