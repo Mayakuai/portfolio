@@ -3,15 +3,19 @@
 
 //  vendor styles
 @import 'vendor/bootstrap/bootstrap';
+@import 'vendor/magnific-popup';
 
 // General Settings
 @import 'global/variables';
 @import 'global/mixins';
 @import 'global/fonts';
 @import 'global/animations';
+@import 'global/icons';
 
 // Main Global Styles
 @import 'global/styles';
 
 // Content Specific
-@import 'components/layout';
+@import 'components/nav';
+@import 'components/home';
+@import 'components/resume';
