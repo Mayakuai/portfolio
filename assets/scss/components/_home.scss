@@ -464,3 +464,77 @@
     }
   }
 }
+
+/* **************Skills Icon************** */
+#skillsIcons {
+  background: $fresh;
+	padding: 80px 0 210px 0;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	color: $darkGray;
+  .container{
+    .holder{
+      .title{
+        padding: 0 0 45px;
+        // font-weight: 700;
+        // font-size: 4em;
+        -webkit-text-stroke: 1px $darkGray;
+        // -webkit-text-fill-color: transparent;
+        // text-align: left;
+        h2{
+          color: $darkGray;
+        }
+      }
+      .row{
+        .me{
+          padding: 25px;
+          i{
+            font-size: 40px;
+          	margin: 10px 0;
+          }
+          svg{
+            width: 125px;
+          	height: auto;
+          }
+          h3{
+            font-size: 20px;
+          	margin: 10px 0;
+          }
+          p{
+            font-size: 20px;
+          	margin: 10px 0;
+          	@include paragraph();
+          }
+        }
+      }
+    }
+  }
+}
+
+.optimism {
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  i {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 86px;
+    margin-bottom: 50px;
+    width: 3px;
+    height: 5px;
+    background: red;
+    opacity: 0;
+  }
+  &:hover {
+    @for $i from 1 through 50 {
+      i:nth-of-type(#{$i}) {
+        transform: translate3d(random(190) - 100 + px,random(50) - 100 + px,0) rotate(random(360) + deg);
+        background: hsla(random(360),100%,50%,1);
+        animation: bang 700ms ease-out forwards infinite;
+        opacity: 0;
+      }
+    }
+  }
+}
