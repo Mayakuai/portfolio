@@ -661,7 +661,7 @@
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  padding:25px;
+  padding: 50px;
   &::before{
     position: absolute;
     content: "";
@@ -733,9 +733,48 @@
     }
     &.hairline {
       &::before, &::after {
-        height: 1px;
+        height: 2px;
       }
     }
+  }
+  .title{
+    h2{
+      color: $gray;
+      @include heading();
+      font-size: 4em;
+  
+      // -webkit-text-fill-color: $darkGray;
+      -webkit-text-stroke: 1px $darkGray;
+      -webkit-text-fill-color: transparent;
+      text-align: left;
+      .outline-text{
+        -webkit-text-stroke: 1px $darkGray;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+  .tech{
+    color: $gray;
+    @include heading();
+    font-size: 2em;
+    margin: 10px 0 15px;
+    -webkit-text-fill-color: $darkGray;
+    .outline-text{
+      -webkit-text-stroke: 1px $darkGray;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .description{
+    text-align: center;
+  }
+  .images{
+    img{
+      width: 400px;
+      height: auto;
+    }
+  }
+  .links{
+    text-align: center;
   }
 }
 

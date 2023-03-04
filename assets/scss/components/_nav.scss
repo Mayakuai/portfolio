@@ -37,6 +37,9 @@
   }
 }
 
+.sunshine .nav-link::after {
+  background: $vermillion;
+}
 .nav-link::after {
     bottom: 24%;
     z-index: -1;

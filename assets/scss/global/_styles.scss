@@ -6,7 +6,6 @@
 	  -webkit-box-sizing: border-box;
   }
 
-
   html{
     scroll-behavior: smooth;
   }
@@ -191,3 +190,10 @@
   .white{
     background: $white !important;
   }
+
+.copyright{
+  background: $darkGray;
+  color: $white;
+  text-align: center;
+  padding: 10px 0;  
+}
