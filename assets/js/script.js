@@ -40,6 +40,29 @@
 			console.log("hero a");
 		});
 
+
+		///Magnific Popup
+		$('.popup-modal').magnificPopup({
+			type: 'inline',
+			preloader: false,
+			modal: true
+		});
+
+		$(document).on('click', '.popup-modal-dismiss', function (e) {
+			e.preventDefault();
+			$.magnificPopup.close();
+		});
+
+		//Portfolio gallery
+		$('.project-btn').click(function () {
+			$('#' + $(this).data("index")).fadeIn(300);
+			console.log('visible');
+		});
+			$(".pop > .project-btn").click(function () {
+				$(".pop").fadeOut(300);
+				console.log('why')
+			});
+
 		//Nav Bar Color transition
  $(window).scroll(function(){
     var scrollTop = $(window).scrollTop();
