@@ -89,9 +89,10 @@
   a.button {
     color:$sunshine;
     text-decoration:none;
-    -webkit-transition:0.3s all ease;
-    transition:0.3s ease all;
-    // @include transOnly(250ms,ease-in-out);
+    // -webkit-transition:0.3s all ease;
+    // transition:0.3s ease all;
+    @include transOnly(250ms,ease-in-out);
+    @include paragraph();
     &:hover {
       color:$white;
     }
@@ -195,5 +196,9 @@
   background: $darkGray;
   color: $white;
   text-align: center;
-  padding: 10px 0;  
+  padding: 10px 0;
+}
+strong{
+  font-weight: 500;
+  color: $sunshine;
 }

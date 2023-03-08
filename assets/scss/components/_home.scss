@@ -372,11 +372,12 @@
           ul{
             li{
               list-style: disc;
-            	margin-left: 34px;
+            	margin-left: 35px;
             	line-height: 24px;
-            	font-size: 15px;
+            	font-size: 18px;
             	@include paragraph();
               text-align: left;
+              padding-bottom: 3px;
             }
           }
         }
@@ -742,7 +743,7 @@
       color: $gray;
       @include heading();
       font-size: 4em;
-  
+
       // -webkit-text-fill-color: $darkGray;
       -webkit-text-stroke: 1px $darkGray;
       -webkit-text-fill-color: transparent;
