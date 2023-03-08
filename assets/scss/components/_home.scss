@@ -459,6 +459,10 @@
             		color: $sunshine;
                 padding-top: 10px;
               }
+              .montserrat{
+                @include montserrat(700);
+
+              }
               h4{
                 margin-left: 15px;
                 margin-top: -14px;
@@ -812,7 +816,8 @@
       -webkit-text-fill-color: transparent;
     }
   }
-  .container{
+  .container,
+  .container-fluid{
     .title{
       h2{
         // -webkit-text-stroke: 1px $sunshine;

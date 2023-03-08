@@ -1,7 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;700;800;900&family=Archivo+Narrow&family=Archivo:wght@100;200;300;400&family=Roboto:wght@300;400;700;900&family=Source+Sans+Pro:wght@700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;700;800;900&family=Archivo+Narrow&family=Archivo:wght@100;200;300;400&family=Roboto:wght@300;400;700;900&family=Source+Sans+Pro:wght@700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;700;800;900&family=Archivo+Narrow&family=Archivo:wght@100;200;300;400&family=Roboto:wght@300;400;700;900&family=Source+Sans+Pro:wght@700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;700;800;900&family=Archivo+Narrow&family=Archivo:wght@100;200;300;400&family=Montserrat:wght@700&family=Roboto:wght@300;400;700;900&family=Source+Sans+Pro:wght@700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 @mixin heading($weight:700){
@@ -11,6 +11,11 @@
 
 @mixin paragraph($weight:300){
   font-family: 'Work Sans', sans-serif;
+	font-weight: $weight;
+}
+
+@mixin montserrat($weight:700){
+  font-family: 'Montserrat', sans-serif;
 	font-weight: $weight;
 }
 
