@@ -641,34 +641,34 @@
 /* **************ME SVG ICONS**************  */
 
 	.passion .pass0{
-		fill:#fff;
+		fill:#4abdac;
 		stroke:#1c767e;
 		stroke-width:2;
 		stroke-miterlimit:10;
-		-moz-transition: all 0.25s ease-in-out;
-		-o-transition: all 0.25s ease-in-out;
-		-webkit-transition: all 0.25s ease-in-out;
-		transition: all 0.25s ease-in-out;
+		@include transOnly(250ms,ease-in-out);
 	}
-	.passion .pass1{fill:#fff;}
-	.passion .pass2{fill:#fff;stroke:#1c767e;stroke-width:2;stroke-miterlimit:10;}
-	.passion .pass3{fill:#fff;stroke:#1c767e;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+	.passion .pass1{fill:#4abdac; @include transOnly(250ms,ease-in-out); @include transOnly(250ms,ease-in-out);}
+	.passion .pass2{fill:#4abdac;stroke:#1c767e;stroke-width:2;stroke-miterlimit:10; @include transOnly(250ms,ease-in-out);}
+	.passion .pass3{fill:#4abdac;stroke:#1c767e;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10; @include transOnly(250ms,ease-in-out);}
 	.passion:hover .pass0{fill:#fc4a1a;stroke:#fc4a1a;stroke-width:2;stroke-miterlimit:10; }
+  .passion:hover .pass1{fill:#fff;}
+  .passion:hover .pass2{fill:#fff;stroke:#1c767e;stroke-width:2;stroke-miterlimit:10;}
+  .passion:hover .pass3{fill:#fff;stroke:#1c767e;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
 
-	.creative .creative0{fill:none;}
-	.creative1{fill:#1c767e;}
+	.creative .creative0{fill:none; @include transOnly(250ms,ease-in-out);}
+	.creative1{fill:#1c767e; @include transOnly(250ms,ease-in-out);}
 	.creative:hover .creative0{fill:#f7b733}
 	.creative:hover #bulb{fill:#fff;}
 	.creative:hover #ray .creative1{fill:#fff;transition: all 2s;animation: flash 2s ease-in-out forwards infinite;}
 
-	.adaptiable	.adapt1{fill:none;stroke:#1c767e;stroke-width:3;stroke-miterlimit:10;}
+	.adaptiable	.adapt1{fill:none;stroke:#1c767e;stroke-width:3;stroke-miterlimit:10; @include transOnly(250ms,ease-in-out);}
 	.adaptiable:hover	.adapt1{fill:#1c767e;}
 
 
-	.reliable .rel0{display:none;}
-	.reliable .rel1{display:inline;fill:transparent;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
-	.reliable .rel2{fill:none;stroke:#1c767e;stroke-width:3;stroke-miterlimit:10;}
-	.reliable .rel3{fill:none;stroke:#1c767e;stroke-width:3;stroke-miterlimit:10;}
+	.reliable .rel0{display:none; @include transOnly(250ms,ease-in-out);}
+	.reliable .rel1{display:inline;fill:transparent;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10; @include transOnly(250ms,ease-in-out);}
+	.reliable .rel2{fill:none;stroke:#1c767e;stroke-width:3;stroke-miterlimit:10; @include transOnly(250ms,ease-in-out);}
+	.reliable .rel3{fill:none;stroke:#1c767e;stroke-width:3;stroke-miterlimit:10; @include transOnly(250ms,ease-in-out);}
 
 	.reliable:hover .rel2{
     fill:#fc4a1a;
@@ -678,9 +678,9 @@
   }
 
 
-	.problemSolving .ps3{fill:#1c767e;}
-	.problemSolving .unsolved{fill:#1c767e;}
-	.problemSolving .solved{fill:transparent;}
+	.problemSolving .ps3{fill:#1c767e; @include transOnly(250ms,ease-in-out);}
+	.problemSolving .unsolved{fill:#1c767e; @include transOnly(250ms,ease-in-out);}
+	.problemSolving .solved{fill:transparent; @include transOnly(250ms,ease-in-out);}
 	.problemSolving:hover .unsolved{fill:transparent;}
 	.problemSolving:hover .solved{
 		fill:#1c767e;
@@ -691,9 +691,9 @@
 	}
 
 
-		.quality .quality0{fill:none;stroke:#1c767e;stroke-width:3;stroke-miterlimit:10;}
-		.quality .quality1{fill:none;stroke:#1c767e;stroke-width:3;stroke-miterlimit:10;}
-		.quality .quality2{fill:#1c767e;}
+		.quality .quality0{fill:none;stroke:#1c767e;stroke-width:3;stroke-miterlimit:10; @include transOnly(250ms,ease-in-out);}
+		.quality .quality1{fill:none;stroke:#1c767e;stroke-width:3;stroke-miterlimit:10; @include transOnly(250ms,ease-in-out);}
+		.quality .quality2{fill:#1c767e; @include transOnly(250ms,ease-in-out);}
 		.quality:hover .quality1{fill:#1c767e;stroke:#1c767e;stroke-width:3;stroke-miterlimit:10;	-moz-transition: all 0.5s;
 			-o-transition: all 0.5s;
 			-webkit-transition: all 0.5s;
@@ -704,11 +704,11 @@
 			transition: all 0.5s;}
 
 
-		.outOfTheBox .outOfTheBoxIcon0{fill:#1c767e;}
-		.outOfTheBox .outOfTheBoxIcon1{fill:transparent;stroke:#1c767e;stroke-width:3;stroke-miterlimit:10;}
-		.outOfTheBox #bulb{fill:none;stroke:#1c767e;stroke-width:3;stroke-miterlimit:10;}
-		.outOfTheBox #gear path {fill:#1c767e;}
-		.outOfTheBox #innerGear .outOfTheBoxIcon1 {fill:#f7b733;stroke:#f7b733;stroke-width:3;stroke-miterlimit:10;}
+		.outOfTheBox .outOfTheBoxIcon0{fill:#1c767e; @include transOnly(250ms,ease-in-out);}
+		.outOfTheBox .outOfTheBoxIcon1{fill:transparent;stroke:#1c767e;stroke-width:3;stroke-miterlimit:10; @include transOnly(250ms,ease-in-out);}
+		.outOfTheBox #bulb{fill:none;stroke:#1c767e;stroke-width:3;stroke-miterlimit:10; @include transOnly(250ms,ease-in-out);}
+		.outOfTheBox #gear path {fill:#1c767e; @include transOnly(250ms,ease-in-out);}
+		.outOfTheBox #innerGear .outOfTheBoxIcon1 {fill:#f7b733;stroke:#f7b733;stroke-width:3;stroke-miterlimit:10; @include transOnly(250ms,ease-in-out);}
 		.outOfTheBox:hover #bulb{fill:#f7b733;stroke:#f7b733;stroke-width:3;stroke-miterlimit:10;}
 		.outOfTheBox:hover #ray .outOfTheBoxIcon0{fill:#fff;transition: all 2s;animation: flash 2s ease-in-out forwards infinite;}
 		.outOfTheBox:hover #gear path {fill:#fff;}
@@ -732,6 +732,7 @@
       text-align: center;
       cursor: pointer;
       position: relative;
+      @include transOnly(250ms,ease-in-out);
     }
 
     .optimism i {
@@ -744,6 +745,7 @@
       height: 5px;
       background: red;
       opacity: 0;
+      @include transOnly(250ms,ease-in-out);
     }
 
     .optimism:hover i:nth-of-type(1) {

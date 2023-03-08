@@ -327,6 +327,7 @@
       display: none;
       .row{
         .job{
+          margin-bottom: 1em;
           .title{
             width: 100%;
             color: $gray;
@@ -345,12 +346,13 @@
             }
           }
           .companyHeading{
-            // @include heading();
+            @include heading(700);
             line-height:  40px;
             letter-spacing: -1px;
           	font-size: 40px;
           	color: $fresh;
             text-align: left;
+            // margin-bottom: 0;
             // -webkit-text-fill-color: $darkGray;
           }
           .containerHeading{
@@ -363,11 +365,7 @@
           	width: 120%;
           	overflow: visible;
             text-align: left;
-            &.muted{
-              // color: #777;
-              color: $vermillion;
-            	font-size: 30px;
-            }
+            margin-bottom: 0.5em;
           }
           ul{
             li{
@@ -377,7 +375,7 @@
             	font-size: 18px;
             	@include paragraph();
               text-align: left;
-              padding-bottom: 3px;
+              padding-bottom: 5px;
             }
           }
         }
@@ -396,7 +394,8 @@
         .col-md-12{
           .skillsHeading{
             font-size: 30px;
-            color: #000;
+            color: $darkGray;
+            @include heading();
           }
           ul.skillsGrid{
             margin: 20px 0 0 0;
@@ -419,7 +418,7 @@
             	height: 50px;
             	display: inline-block;
             	margin: 5px;
-            	vertical-align: middle;
+            	// vertical-align: middle;
             	text-align: left;
             	margin: 25px 25px 5px 0px;
               &.widerLI{
@@ -441,7 +440,23 @@
                 -o-transition: all 0.25s ease-in-out;
                 -webkit-transition: all 0.25s ease-in-out;
                 transition: all 0.25s ease-in-out;
-            		color: $darkGray;
+            		color: $sunshine;
+                padding-top: 10px;
+                & svg{
+                  vertical-align: top;
+                }
+              }
+              span{
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                font-size: 35px;
+                -moz-transition: all 0.25s ease-in-out;
+                -o-transition: all 0.25s ease-in-out;
+                -webkit-transition: all 0.25s ease-in-out;
+                transition: all 0.25s ease-in-out;
+            		color: $sunshine;
                 padding-top: 10px;
               }
               h4{

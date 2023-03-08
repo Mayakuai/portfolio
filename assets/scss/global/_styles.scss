@@ -15,7 +15,9 @@
 
   ::-moz-selection { background: $vermillion; color: $white; text-shadow: none; }
   ::selection { background: $vermillion; color: $white; text-shadow: none; }
-
+  ::marker{
+    color: $sunshine;
+  }
 #markers {
     position: fixed;
     bottom: 80px;
