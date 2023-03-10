@@ -131,7 +131,6 @@
   	// max-width: 1000px;
   	// margin: 0 auto;
     .title{
-
       @include breakpoint('xsmall'){
         width: calc(100% - 0px);
       }
@@ -170,6 +169,14 @@
         display: inline-block;
       	width: 100%;
       	text-align: center;
+        @include breakpoint('xsmall'){
+          padding-left: 0;
+          margin-bottom: 0;
+        }
+        @include breakpoint('medium'){
+          padding-left: 2rem;
+          margin-bottom: 35px;
+        }
         li{
         	position: relative;
         	display: inline-block;
@@ -178,10 +185,13 @@
         	text-align: center;
           @include breakpoint('xsmall'){
             font-size: 18px;
+            margin: 0 5px;
+          }
+          @include breakpoint('small'){
+            font-size: 25px;
             margin: 0 10px;
           }
           @include breakpoint('medium'){
-            font-size: 25px;
             margin: 0 20px;
           }
           &:hover{
@@ -239,6 +249,12 @@
     }
     .tab{
     	width: 100%;
+      @include breakpoint('xsmall'){
+        padding: 0 20px;
+      }
+      @include breakpoint('medium'){
+        padding: 0;
+      }
       .tab-content{
         .row{
           // education
@@ -262,25 +278,37 @@
       p{
         margin-top: 30px;
       	padding: 0 0 16px 0;
-      	font-size: 24px;
       	line-height: 30px;
+        @include breakpoint('xsmall'){
+          font-size: 20px;
+        }
+        @include breakpoint('small'){
+          font-size: 24px;
+        }
+
       }
       .links{
-        margin: 20px 0 0 0;
         a + a{
-          margin: 0 0 0 15px;
+          @include breakpoint('xsmall'){
+            margin: 15px 20px;
+          }
+          @include breakpoint('medium'){
+            margin: 0 0 0 15px;
+          }
         }
         a{
+          @include transOnly(250ms,ease-in-out);
           &:hover{
             i{
               color: $fresh;
             }
           }
           i{
-            -moz-transition: all 0.5s;
-            -o-transition: all 0.5s;
-            -webkit-transition: all 0.5s;
-            transition: all 0.5s;
+            @include transOnly(250ms,ease-in-out);
+            // -moz-transition: all 0.5s;
+            // -o-transition: all 0.5s;
+            // -webkit-transition: all 0.5s;
+            // transition: all 0.5s;
             // filter: progid:DXImageTransform .Microsoft .Alpha(enabled=false);
             opacity: 1;
             font-size: 18px;
@@ -301,8 +329,7 @@
           max-width: 33.33%;
         }
         .school{
-          // padding-left: 100px;
-        	// margin-bottom: 50px;
+          padding-bottom: 20px;
           span{
             display: block;
           }
@@ -355,11 +382,17 @@
             @include heading(700);
             line-height:  40px;
             letter-spacing: -1px;
-          	font-size: 40px;
           	color: $fresh;
             text-align: left;
             // margin-bottom: 0;
             // -webkit-text-fill-color: $darkGray;
+            @include breakpoint('xsmall'){
+              font-size: 30px;
+            }
+            @include breakpoint('medium'){
+              font-size: 40px;
+            }
+
           }
           .containerHeading{
             // @include paragraph();
@@ -369,11 +402,23 @@
             letter-spacing: -1px;
           	line-height: 40px;
           	width: 120%;
-          	overflow: visible;
+          	overflow: hidden;
             text-align: left;
             margin-bottom: 0.5em;
+            @include breakpoint('xsmall'){
+              font-size: 22px;
+            }
+            @include breakpoint('medium'){
+              font-size: calc(1.325rem + .9vw);
+            }
           }
           ul{
+            @include breakpoint('xsmall'){
+              padding-left: 0;
+            }
+            @include breakpoint('medium'){
+              padding-left: 2rem;
+            }
             li{
               list-style: disc;
             	margin-left: 35px;
