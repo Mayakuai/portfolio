@@ -384,17 +384,19 @@
           }
           .companyHeading{
             @include heading(700);
-            line-height:  40px;
+
             letter-spacing: -1px;
           	color: $fresh;
             text-align: left;
             // margin-bottom: 0;
             // -webkit-text-fill-color: $darkGray;
             @include breakpoint('xsmall'){
-              font-size: 30px;
+              font-size: 28px;
+              line-height:  28px;
             }
             @include breakpoint('medium'){
               font-size: 40px;
+              line-height:  40px;
             }
 
           }
@@ -404,16 +406,18 @@
             // -webkit-text-fill-color: $darkGray;
             font-weight: 300;
             letter-spacing: -1px;
-          	line-height: 40px;
+
           	width: 120%;
           	overflow: hidden;
             text-align: left;
             margin-bottom: 0.5em;
             @include breakpoint('xsmall'){
-              font-size: 22px;
+              font-size: 20px;
+              line-height: 28px;
             }
             @include breakpoint('medium'){
               font-size: calc(1.325rem + .9vw);
+              line-height: 40px;
             }
           }
           ul{
@@ -427,10 +431,15 @@
               list-style: disc;
             	margin-left: 35px;
             	line-height: 24px;
-            	font-size: 18px;
             	@include paragraph();
               text-align: left;
               padding-bottom: 5px;
+              @include breakpoint('xsmall'){
+                font-size: 16px;
+              }
+              @include breakpoint('medium'){
+                font-size: 18px;
+              }
             }
           }
         }
