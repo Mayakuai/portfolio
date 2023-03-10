@@ -64,32 +64,31 @@
 			});
 
 		//Nav Bar Color transition
- $(window).scroll(function(){
-    var scrollTop = $(window).scrollTop();
-    // if (scrollTop > 49) {
-    //     $('body').addClass('header-fixed');
-    // } else {
-    //     $('body').removeClass('header-fixed');
-    // }
+	 $(window).scroll(function(){
+	    var scrollTop = $(window).scrollTop();
+	    // if (scrollTop > 49) {
+	    //     $('body').addClass('header-fixed');
+	    // } else {
+	    //     $('body').removeClass('header-fixed');
+	    // }
 
-		var headerHeight = $('.navbar').height();
-    var topOffset = $('#about').offset().top;
-    var abtTransitionPoint = topOffset - headerHeight;
-		var contactOffset = $('#contact').offset().top;
-		var contactTransitionPoint = contactOffset - headerHeight;
-    if (scrollTop > abtTransitionPoint) {
-        $('.navbar').addClass('sunshine');
-    } else {
-        $('.navbar').removeClass('sunshine');
-    }
-		if (scrollTop > contactTransitionPoint) {
-			$('.navbar').removeClass('sunshine');
-				$('.navbar').addClass('white');
-		} else {
-				$('.navbar').removeClass('white');
-		}
-  });
-
+			var headerHeight = $('.navbar').height();
+	    var topOffset = $('#about').offset().top;
+	    var abtTransitionPoint = topOffset - headerHeight;
+			var contactOffset = $('#contact').offset().top;
+			var contactTransitionPoint = contactOffset - headerHeight;
+	    if (scrollTop > abtTransitionPoint) {
+	        $('.navbar').addClass('sunshine');
+	    } else {
+	        $('.navbar').removeClass('sunshine');
+	    }
+			if (scrollTop > contactTransitionPoint) {
+				$('.navbar').removeClass('sunshine');
+					$('.navbar').addClass('white');
+			} else {
+					$('.navbar').removeClass('white');
+			}
+	  });
 
   });
 })( jQuery );
