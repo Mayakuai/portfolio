@@ -127,9 +127,6 @@
   color: $darkGray;
   .holder {
   	padding: 80px 0;
-
-  	// max-width: 1000px;
-  	// margin: 0 auto;
     @include breakpoint('xsmall'){
       font-size: 18px;
     }
@@ -191,7 +188,7 @@
         	text-align: center;
           @include breakpoint('xsmall'){
             font-size: 18px;
-            margin: 0 5px;
+            margin: 0 3px;
           }
           @include breakpoint('small'){
             font-size: 25px;
