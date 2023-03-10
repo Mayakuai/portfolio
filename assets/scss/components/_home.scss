@@ -171,13 +171,19 @@
       	width: 100%;
       	text-align: center;
         li{
-          font-size: 25px;
         	position: relative;
         	display: inline-block;
         	padding: 0 0 0px;
-        	margin: 0 20px;
         	text-transform: uppercase;
         	text-align: center;
+          @include breakpoint('xsmall'){
+            font-size: 18px;
+            margin: 0 10px;
+          }
+          @include breakpoint('medium'){
+            font-size: 25px;
+            margin: 0 20px;
+          }
           &:hover{
             &:after{
               width: 100%;
