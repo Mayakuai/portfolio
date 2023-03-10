@@ -127,9 +127,15 @@
   color: $darkGray;
   .holder {
   	padding: 80px 0;
-  	font-size: 20px;
+
   	// max-width: 1000px;
   	// margin: 0 auto;
+    @include breakpoint('xsmall'){
+      font-size: 18px;
+    }
+    @include breakpoint('small'){
+      font-size: 20px;
+    }
     .title{
       @include breakpoint('xsmall'){
         width: calc(100% - 0px);
@@ -278,12 +284,13 @@
       p{
         margin-top: 30px;
       	padding: 0 0 16px 0;
-      	line-height: 30px;
         @include breakpoint('xsmall'){
-          font-size: 20px;
+          font-size: 18px;
+          line-height: 24px;
         }
         @include breakpoint('small'){
           font-size: 24px;
+          line-height: 30px;
         }
 
       }
@@ -481,7 +488,7 @@
             	text-align: left;
               @include breakpoint('xsmall'){
                 margin: 5px;
-                width: 175px;
+                // width: 175px;
               }
               @include breakpoint('medium'){
                 margin: 15px 15px 5px 0px;
@@ -553,11 +560,11 @@
               	vertical-align: middle;
               	@include transOnly(250ms,ease-in-out);
                 @include breakpoint('xsmall'){
-                  margin: 5px;
+                  // margin: 5px;
                   width: 175px;
                 }
                 @include breakpoint('medium'){
-                  margin: 15px 15px 5px 0px;
+                  // margin: 15px 15px 5px 0px;
                   width: 213px;
                 }
               }
