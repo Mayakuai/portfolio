@@ -471,7 +471,13 @@
             	margin: 5px;
             	// vertical-align: middle;
             	text-align: left;
-            	margin: 25px 25px 5px 0px;
+
+              @include breakpoint('xsmall'){
+                margin: 0;
+              }
+              @include breakpoint('medium'){
+                margin: 25px 25px 5px 0px;
+              }
               &.widerLI{
                 width: 300px;
               }
