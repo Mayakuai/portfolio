@@ -443,18 +443,27 @@
           padding: 10px 0;
         }
         .col-md-12{
+          // h2{
+          //   @include breakpoint('xsmall'){
+          //     font-size: 24px;
+          //   }
+          //   @include breakpoint('medium'){
+          //     font-size: calc(1.325rem + .9vw);
+          //   }
+          //
+          // }
           .skillsHeading{
-            font-size: 30px;
+            // font-size: 30px;
             color: $darkGray;
             @include heading();
           }
           ul.skillsGrid{
-            margin: 20px 0 0 0;
+            margin: 0;
           	padding: 0;
           	list-style: none;
           	display: block;
           	text-align: left;
-          	width: 100%;
+          	// width: 100%;
             &:before{
               content: '';
             	display: grid;
@@ -465,18 +474,18 @@
               clear: both;
             }
             li{
-              width: 213px;
             	height: 50px;
             	display: inline-block;
             	margin: 5px;
             	// vertical-align: middle;
             	text-align: left;
-
               @include breakpoint('xsmall'){
-                margin: 0;
+                margin: 5px;
+                width: 175px;
               }
               @include breakpoint('medium'){
-                margin: 25px 25px 5px 0px;
+                margin: 15px 15px 5px 0px;
+                width: 213px;
               }
               &.widerLI{
                 width: 300px;
@@ -491,14 +500,21 @@
                 display: inline-block;
                 width: 40px;
                 height: 40px;
-                text-align: center;
                 font-size: 35px;
-                -moz-transition: all 0.25s ease-in-out;
-                -o-transition: all 0.25s ease-in-out;
-                -webkit-transition: all 0.25s ease-in-out;
-                transition: all 0.25s ease-in-out;
+                text-align: center;
+                @include transOnly(250ms,ease-in-out);
             		color: $sunshine;
                 padding-top: 10px;
+                @include breakpoint('xsmall'){
+                  width: 35px;
+                  height: 35px;
+                  font-size: 30px;
+                }
+                @include breakpoint('medium'){
+                  width: 40px;
+                  height: 40px;
+                  font-size: 35px;
+                }
                 & svg{
                   vertical-align: top;
                 }
@@ -509,16 +525,22 @@
                 height: 40px;
                 text-align: center;
                 font-size: 35px;
-                -moz-transition: all 0.25s ease-in-out;
-                -o-transition: all 0.25s ease-in-out;
-                -webkit-transition: all 0.25s ease-in-out;
-                transition: all 0.25s ease-in-out;
+                @include transOnly(250ms,ease-in-out);
             		color: $sunshine;
                 padding-top: 10px;
+                @include breakpoint('xsmall'){
+                  width: 35px;
+                  height: 35px;
+                  font-size: 30px;
+                }
+                @include breakpoint('medium'){
+                  width: 40px;
+                  height: 40px;
+                  font-size: 35px;
+                }
               }
               .montserrat{
                 @include montserrat(700);
-
               }
               h4{
                 margin-left: 15px;
@@ -529,10 +551,15 @@
               	color: $black;
               	text-align: left;
               	vertical-align: middle;
-              	-moz-transition: all 0.25s ease-in-out;
-              	-o-transition: all 0.25s ease-in-out;
-              	-webkit-transition: all 0.25s ease-in-out;
-              	transition: all 0.25s ease-in-out;
+              	@include transOnly(250ms,ease-in-out);
+                @include breakpoint('xsmall'){
+                  margin: 5px;
+                  width: 175px;
+                }
+                @include breakpoint('medium'){
+                  margin: 15px 15px 5px 0px;
+                  width: 213px;
+                }
               }
             }
           }
@@ -648,10 +675,7 @@
           background: $vermillion;
           position: absolute;
           opacity: 0;
-          -moz-transition: all 0.25s ease-in-out;
-          -o-transition: all 0.25s ease-in-out;
-          -webkit-transition: all 0.25s ease-in-out;
-          transition: all 0.25s ease-in-out;
+          @include transOnly(250ms,ease-in-out);
           overflow: hidden;
           &:hover {
             opacity: 0.9;
@@ -783,10 +807,7 @@
       &::before, &::after {
         background: $sunshine;
         text-shadow: 1px 1px 1px $black;
-        -moz-transition: all 0.25s ease-in-out;
-        -o-transition: all 0.25s ease-in-out;
-        -webkit-transition: all 0.25s ease-in-out;
-        transition: all 0.25s ease-in-out;
+        @include transOnly(250ms,ease-in-out);
       }
     }
     &::before, &::after {
