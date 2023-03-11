@@ -37,18 +37,26 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">LOGO</a>
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
           <div class="float-end d-md-none d-block">
-						<button id="mobile-menu-button" class="menu-toggle hamburger hamburger--spin" type="button" aria-controls="main-menu" aria-label="Toggle Menu" aria-expanded="false">
-							<span class="hamburger-box">
-								<span class="hamburger-inner"></span>
-							</span>
-							<span class="hamburger-text">Menu</span>
-						</button>
-					</div>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <nav class="nav">
+              <button class="toggle-menu">
+                <span></span>
+              </button>
+            </nav>
+	        </div>
+          <div id="menu">
+            <nav class="mobile-nav">
+              <ul>
+                <li><a class="active" aria-current="page" href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skillsIcons">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="collapse navbar-collapse justify-content-end inner" id="navbarNav">
             <ul class="nav">
               <li class="nav-item"><a class="nav-link active" aria-current="page" href="#header">Home</a></li>
               <li class="nav-item"><a class="nav-link" aria-current="page" href="#about">About</a></li>
@@ -59,6 +67,7 @@
           </div>
         </div>
       </nav>
+
       <div class="container">
         <h1 class="hero-name"><span class="underline--sunshine">Joshua Stuart</span></h1>
         <h1 class="hero-subname">
@@ -1182,7 +1191,6 @@
 				</div>
         </div>
       </section>
-
       <section id="portfolio">
         <div class="container">
           <div class="title scrollflow -slide-top -opacity">
@@ -1240,10 +1248,9 @@
           </div>
         </div>
       </section>
-
       <section id="contact">
         <div class="container-fluid scrollflow -slide-top -opacity">
-          <!-- <h1 class="talk-name scrollflow -slide-top -opacity">LET'S <span class="outline-text">TALK</span></h1> -->
+          <h1 class="talk-name scrollflow -slide-top -opacity">LET'S <span class="outline-text">TALK</span></h1>
           <p class="text-center">Like what you see? Get in touch and let's make some magic together!</p>
           <!-- <div class="contact-info scrollflow -slide-top -opacity">
 						<div class="mail"><a href="mailto:joshuasstuart@gmail.com" title="joshuasstuart@gmail.com"><i class="fa fa-envelope"></i> joshuasstuart<span>@</span>gmail.com</a></div>
@@ -1302,6 +1309,7 @@
     <footer>
       <div class="copyright">© Copyright 2023 Joshua Stuart</div>
     </footer>
+
     <script type="text/javascript" src="assets/js/vendor/jquery.scrollflow.min.js"></script>
     <script type="text/javascript" src="assets/js/vendor/jquery.easing.1.3.js"></script>
 

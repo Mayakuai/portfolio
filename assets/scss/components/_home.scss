@@ -939,6 +939,15 @@
     margin-top: 1em;
     line-height: 1em;
     text-align: center;
+    @include breakpoint('xsmall'){
+      font-size: 8em;
+    }
+    @include breakpoint('medium'){
+      font-size: 14em;
+    }
+    @include breakpoint('large'){
+      font-size: 18em;
+    }
     .outline-text{
       -webkit-text-stroke: 1px $darkGray;
       -webkit-text-fill-color: transparent;

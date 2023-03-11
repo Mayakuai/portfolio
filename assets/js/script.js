@@ -13,26 +13,29 @@
   	});
 
 
-	//Mobile Menu Toggler
+	// //Mobile Menu Toggler
+	//
+	// $('#mobile-menu-button').on('click',function(e){
+	// 	e.preventDefault();
+	//
+	// 	// Toggle the active class
+	// 	$('body').toggleClass('mobile-menu-active');
+	// 	$(this).toggleClass('is-active');
+	//
+	// 	// Aria toggles
+	// 	$(this).attr('aria-expanded', function (i, attr) {
+	// 		return attr == 'true' ? 'false' : 'true'
+	// 	});
+	//
+	// 	// Text Toggler
+	// 	var text = $('#mobile-menu-button .hamburger-text').text();
+	// 	$('#mobile-menu-button .hamburger-text').text(text == 'Menu' ? 'Close' : 'Menu');
+	// });
 
-	$('#mobile-menu-button').on('click',function(e){
-		e.preventDefault();
-
-		// Toggle the active class
-		$('body').toggleClass('mobile-menu-active');
-		$(this).toggleClass('is-active');
-
-		// Aria toggles
-		$(this).attr('aria-expanded', function (i, attr) {
-			return attr == 'true' ? 'false' : 'true'
-		});
-
-		// Text Toggler
-		var text = $('#mobile-menu-button .hamburger-text').text();
-		$('#mobile-menu-button .hamburger-text').text(text == 'Menu' ? 'Close' : 'Menu');
+	$('.toggle-menu').click (function(){
+	  $(this).toggleClass('active');
+	  $('#menu').toggleClass('open');
 	});
-
-
 
 
 		//Header Anchor Tag to About section
