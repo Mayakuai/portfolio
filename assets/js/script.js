@@ -56,11 +56,9 @@
 		//Portfolio gallery
 		$('.project-btn').click(function () {
 			$('#' + $(this).data("index")).fadeIn(300);
-			console.log('visible');
 		});
 			$(".pop > .project-btn").click(function () {
 				$(".pop").fadeOut(300);
-				console.log('why')
 			});
 
 		//Nav Bar Color transition

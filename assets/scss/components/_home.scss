@@ -309,10 +309,6 @@
           }
           i{
             @include transOnly(250ms,ease-in-out);
-            // -moz-transition: all 0.5s;
-            // -o-transition: all 0.5s;
-            // -webkit-transition: all 0.5s;
-            // transition: all 0.5s;
             // filter: progid:DXImageTransform .Microsoft .Alpha(enabled=false);
             opacity: 1;
             font-size: 18px;
@@ -766,10 +762,6 @@
 .pop {
   display:none;
   position:fixed;
-  top:10%;
-  left:10%;
-  width:80%;
-  height:85%;
   background: $white;
   outline:1px solid $black;
   z-index: 999;
@@ -777,6 +769,18 @@
   -webkit-border-radius: 3px;
   border-radius: 3px;
   padding: 50px;
+  @include breakpoint('xsmall'){
+    top:5%;
+    left:5%;
+    width:90%;
+    height:90%;
+  }
+  @include breakpoint('small'){
+    top:10%;
+    left:10%;
+    width:80%;
+    height:85%;
+  }
   &::before{
     position: absolute;
     content: "";
@@ -853,12 +857,16 @@
     h2{
       color: $gray;
       @include heading();
-      font-size: 4em;
-
       // -webkit-text-fill-color: $darkGray;
       -webkit-text-stroke: 1px $darkGray;
       -webkit-text-fill-color: transparent;
       text-align: left;
+      @include breakpoint('xsmall'){
+        font-size: 3em;
+      }
+      @include breakpoint('small'){
+        font-size: 4em;
+      }
       .outline-text{
         -webkit-text-stroke: 1px $darkGray;
         -webkit-text-fill-color: transparent;
@@ -868,16 +876,30 @@
   .tech{
     color: $gray;
     @include heading();
-    font-size: 2em;
+
     margin: 10px 0 15px;
     -webkit-text-fill-color: $darkGray;
+    @include breakpoint('xsmall'){
+      font-size: 24px;
+    }
+    @include breakpoint('small'){
+      font-size: 2em;
+    }
     .outline-text{
       -webkit-text-stroke: 1px $darkGray;
       -webkit-text-fill-color: transparent;
     }
   }
   .description{
-    text-align: center;
+    p{
+      text-align: center;
+      @include breakpoint('xsmall'){
+        font-size: 12px;
+      }
+      @include breakpoint('small'){
+        font-size: 1em;
+      }
+    }
   }
   .images{
     img{
@@ -887,6 +909,19 @@
   }
   .links{
     text-align: center;
+    .button {
+      @include transOnly(250ms,ease-in-out);
+      @include breakpoint('xsmall'){
+        width: 80%;
+        display: block;
+        margin: 15px auto;
+      }
+      @include breakpoint('small'){
+        width: 270px;
+        display:inline-block;
+            margin: 15px 5px;
+      }
+    }
   }
 }
 

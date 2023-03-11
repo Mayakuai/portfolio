@@ -139,18 +139,18 @@
     }
     &:hover {
       &:before {
-        -webkit-transition:0.5s all ease;
-        transition:0.5s all ease;
+        @include transOnly(250ms,ease-in-out);
         top:0;
         left:0;
         right:0;
         bottom:0;
         opacity:1;
+        background-color:$sunshine;
       }
     }
     &:focus {
       &:before {
-        transition:0.5s all ease;
+        @include transOnly(250ms,ease-in-out);
         top:0;
         left:0;
         right:0;
