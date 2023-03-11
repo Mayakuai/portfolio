@@ -70,8 +70,13 @@
       margin-bottom: 35px;
       h2{
         @include heading();
-        font-size: 4em;
         text-align: left;
+        @include breakpoint('xsmall'){
+          font-size: 45px;
+        }
+        @include breakpoint('small'){
+          font-size: 4em;
+        }
         .outline-text{
           -webkit-text-stroke: 1px $darkGray;
           -webkit-text-fill-color: transparent;

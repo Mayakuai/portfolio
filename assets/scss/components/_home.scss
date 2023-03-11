@@ -149,22 +149,22 @@
       @include breakpoint('xlarge'){
         width: calc(35% - 100px);
       }
-      h2{
-        color: $gray;
-        @include heading();
-        font-size: 4em;
-        // -webkit-text-stroke: 1px $fresh;
-        -webkit-text-fill-color: $darkGray;
-
-        text-align: left;
-        &:after{
-          background: $fresh;
-        }
-        .outline-text{
-          -webkit-text-stroke: 1px $darkGray;
-          -webkit-text-fill-color: transparent;
-        }
-      }
+      // h2{
+      //   color: $gray;
+      //   @include heading();
+      //   font-size: 4em;
+      //   // -webkit-text-stroke: 1px $fresh;
+      //   -webkit-text-fill-color: $darkGray;
+      // 
+      //   text-align: left;
+      //   &:after{
+      //     background: $fresh;
+      //   }
+      //   .outline-text{
+      //     -webkit-text-stroke: 1px $darkGray;
+      //     -webkit-text-fill-color: transparent;
+      //   }
+      // }
     }
     .tabs-container{
       position: relative;
