@@ -58,7 +58,7 @@
     -ms-transform: scale(0, 1);
     transform: scale(0, 1);
     -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-    transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
 }
 
 .nav-link:hover::after {
@@ -67,11 +67,11 @@
   transform-origin: left top;
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
-  transform: scale(1, 1)
+  transform: scale(1, 1);
 }
 
 #menu {
-  background: $vermillion;
+  background: $sunshine;
   height: 100%;
   left: 0;
   opacity: 0;
@@ -83,7 +83,6 @@
   visibility: hidden;
   width: 100%;
   z-index: 1100;
-
   &.open {
     opacity: 1;
     visibility: visible;
@@ -109,9 +108,38 @@
     a {
       -webkit-transform: translateZ(0);
       transition: opacity 0.3s ease-in-out;
+
       &:hover {
         opacity: 1;
+        // &::after{
+        //   -webkit-transform-origin: left top;
+        //   -ms-transform-origin: left top;
+        //   transform-origin: left top;
+        //   -webkit-transform: scale(1, 1);
+        //   -ms-transform: scale(1, 1);
+        //   transform: scale(1, 1);
+        // }
       }
+      // &::after{
+      //   bottom: 24%;
+      //   z-index: -1;
+      //   display: block;
+      //   height: 8px;
+      //   content: '';
+      //   position: absolute;
+      //   left: 0px;
+      //   width: 100%;
+      //   background: $vermillion;
+      //   display: block;
+      //   -webkit-transform-origin: right top;
+      //   -ms-transform-origin: right top;
+      //   transform-origin: right top;
+      //   -webkit-transform: scale(0, 1);
+      //   -ms-transform: scale(0, 1);
+      //   transform: scale(0, 1);
+      //   -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+      //   transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+      // }
     }
   }
 
@@ -128,6 +156,9 @@
 
     a {
       color: $white;
+      // -webkit-text-stroke: 0.5px #353535;
+      // text-shadow: .04em .04em 0 #9cb8b3;
+      text-shadow: .04em .04em 0 $darkGray;
       display: block;
       font-size: 2.5rem;
       font-weight: bold;
@@ -142,9 +173,10 @@
 }
 
 
+
 // Hamburger menu toggler stuff below
 .toggle-menu {
-  background-color: transparent;
+  background: transparent;
   border: none;
   cursor: pointer;
   display: inline-block;
@@ -157,9 +189,8 @@
   vertical-align: middle;
   width: 50px;
   z-index: 1110;
-
   span {
-    background-color: $white;
+    background: $vermillion;
     content: "";
     display: block;
     height: 2px;
@@ -167,18 +198,18 @@
     position: absolute;
     top: calc(50% - 1px );
     transform-origin: 50% 50%;
-    transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out,  transform 0.2s linear;
+    transition: background 0.2s ease-in-out, top 0.2s 0.2s ease-out,  transform 0.2s linear;
     // width: 26px;
     width: 35px;
 
     &:before, &:after {
-      background-color: $white;
+      background: $vermillion;
       content: "";
       display: block;
       height: 2px;
       position: absolute;
       transform-origin: 50% 50%;
-      transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out,  transform 0.2s linear;
+      transition: background 0.2s ease-in-out, top 0.2s 0.2s ease-out,  transform 0.2s linear;
       // width: 26px;
       width: 35px;
     }
@@ -189,10 +220,9 @@
       top: -10px;
     }
   }
-
   &.active {
     span {
-      background-color: transparent;
+      background: transparent;
       transition: background 0.2s ease-out;
       &:before, &:after {
         transition: top 0.2s ease-out, transform 0.2s 0.2s ease-out;

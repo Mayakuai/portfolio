@@ -54,6 +54,7 @@
     text-indent: 10px;
     span{
       -webkit-text-stroke: 0.5px $darkGray;
+      // text-shadow: .04em .04em 0 $darkGray;
       position: absolute;
       opacity: 0;
       overflow: hidden;

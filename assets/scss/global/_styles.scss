@@ -72,7 +72,7 @@
         @include heading();
         text-align: left;
         @include breakpoint('xsmall'){
-          font-size: 45px;
+          font-size: 40px;
         }
         @include breakpoint('small'){
           font-size: 4em;
