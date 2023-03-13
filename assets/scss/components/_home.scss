@@ -4,13 +4,9 @@
   @include paragraph();
   position: relative;
   overflow: hidden;
-
   width: 100%;
   clear: both;
   position: relative;
-  // method 2
-  // padding: 2em 0;
-  // min-height: 25em;
   .hero-name{
     color: $darkGray;
     @include heading();
@@ -18,12 +14,10 @@
     -webkit-text-fill-color: transparent;
 
 
-    // method 2
-    // font-size: 6em;
-    // margin: 2em 0 0;
-
-
-
+    @include breakpoint('mbl'){
+      margin-top: 10em;
+      font-size: 3.5em;
+    }
     @include breakpoint('xsmall'){
       margin-top: 10em;
       // font-size: 3em;
@@ -51,18 +45,12 @@
   .hero-subname{
     color: $white;
     @include heading();
-    // font-size: 10em;
     width: 100%;
     clear: both;
-    // padding: 2em 0;
     position: relative;
-    // min-height: 25em;
-
-    //mthod 2
-    // font-size: 6em;
-    // margin: 0 0 2em;
-
-
+    @include breakpoint('mbl'){
+      font-size: 3em;
+    }
     @include breakpoint('xsmall'){
       font-size: 3em;
     }
@@ -133,6 +121,9 @@
     text-align: center;
     width: 100%;
     height: auto;
+    @include breakpoint('mbl'){
+      margin-top: 7em;
+    }
     @include breakpoint('xsmall'){
       margin-top: 10em;
     }

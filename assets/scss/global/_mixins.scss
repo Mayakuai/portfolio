@@ -4,15 +4,25 @@
 }
 
 
-@mixin breakpoint($bp: "xsmall"){
+@mixin breakpoint($bp: "mbl"){
+// @mixin breakpoint($bp: "xsmall"){
+  // @if $bp == 'xsmall' {
+  //   @media only screen and (min-width:0px) { @content };
+  // }
+  // @if $bp == 'phone' {
+  //   @media only screen and (min-width:325px) { @content };
+  // }
+  // @if $bp == 'xphone' {
+  //   @media only screen and (min-width:480px) { @content };
+  // }
 
-  @if $bp == 'xsmall' {
+	@if $bp == 'mbl' {
     @media only screen and (min-width:0px) { @content };
   }
   @if $bp == 'phone' {
     @media only screen and (min-width:325px) { @content };
   }
-  @if $bp == 'xphone' {
+  @if $bp == 'xsmall' {
     @media only screen and (min-width:480px) { @content };
   }
   @if $bp == 'small' {
