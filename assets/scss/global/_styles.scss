@@ -81,6 +81,9 @@
       h2{
         @include heading();
         text-align: left;
+        @include breakpoint('mbl'){
+          font-size: 43px;
+        }
         @include breakpoint('xsmall'){
           font-size: 43px;
         }
@@ -132,6 +135,9 @@
     position:relative;
     @include transOnly(250ms,ease-in-out);
     // box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+    @include breakpoint('mbl'){
+      width: 80%;
+    }
     @include breakpoint('xsmall'){
       width: 80%;
     }
