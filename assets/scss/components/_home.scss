@@ -13,10 +13,9 @@
     -webkit-text-stroke: 1px $darkGray;
     -webkit-text-fill-color: transparent;
 
-
     @include breakpoint('mbl'){
-      margin-top: 10em;
-      font-size: 3.5em;
+      margin-top: 8em;
+      font-size: 3em;
     }
     @include breakpoint('xsmall'){
       margin-top: 10em;
