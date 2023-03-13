@@ -4,50 +4,71 @@
   @include paragraph();
   position: relative;
   overflow: hidden;
+
+  width: 100%;
+  clear: both;
+  padding: 2em 0;
+  position: relative;
+  // min-height: 25em;
   .hero-name{
     color: $darkGray;
     @include heading();
     -webkit-text-stroke: 1px $darkGray;
     -webkit-text-fill-color: transparent;
-    line-height: 1em;
-    @include breakpoint('xsmall'){
-      margin-top: 7em;
-      font-size: 3em;
-    }
-    @include breakpoint('small'){
-      margin-top: 7em;
-      font-size: 5em;
-    }
-    @include breakpoint('medium'){
-      margin-top: 7em;
-      font-size: 5em;
-    }
-    @include breakpoint('large'){
-      margin-top: 3em;
-      font-size: 8em;
-    }
-    @include breakpoint('xlarge'){
-      margin-top: 2em;
-      font-size: 12em;
-    }
+    // line-height: 1em;
+    font-size: 6em;
+    margin: 3em 0 0;
+    // text-align: center;
+    // text-transform: uppercase;
+
+
+    // @include breakpoint('xsmall'){
+    //   margin-top: 7em;
+    //   font-size: 3em;
+    // }
+    // @include breakpoint('small'){
+    //   margin-top: 7em;
+    //   font-size: 5em;
+    // }
+    // @include breakpoint('medium'){
+    //   margin-top: 2em;
+    //   font-size: 5em;
+    // }
+    // @include breakpoint('large'){
+    //   margin-top: 2em;
+    //   font-size: 8em;
+    // }
+    // @include breakpoint('xlarge'){
+    //   margin-top: 2em;
+    //   font-size: 12em;
+    // }
   }
   .hero-subname{
     color: $white;
     @include heading();
-    font-size: 10em;
-    line-height: 1em;
-    @include breakpoint('xsmall'){
-      font-size: 3em;
-    }
-    @include breakpoint('medium'){
-      font-size: 5em;
-    }
-    @include breakpoint('large'){
-      font-size: 8em;
-    }
-    @include breakpoint('xlarge'){
-      font-size: 10em;
-    }
+    // font-size: 10em;
+    // line-height: 1em;
+    width: 100%;
+    clear: both;
+    // padding: 2em 0;
+    position: relative;
+    // min-height: 25em;
+    font-size: 6em;
+    margin: 0 0 2em;
+    // text-align: center;
+    // text-transform: uppercase;
+    // @include breakpoint('xsmall'){
+    //   font-size: 3em;
+    // }
+    // @include breakpoint('medium'){
+    //   font-size: 5em;
+    // }
+    // @include breakpoint('large'){
+    //   font-size: 8em;
+    // }
+    // @include breakpoint('xlarge'){
+    //   font-size: 10em;
+    // }
   }
   .rw-words{
     display: inline;
