@@ -7,19 +7,21 @@
 
   width: 100%;
   clear: both;
-  padding: 2em 0;
   position: relative;
+  // method 2
+  // padding: 2em 0;
   // min-height: 25em;
   .hero-name{
     color: $darkGray;
     @include heading();
     -webkit-text-stroke: 1px $darkGray;
     -webkit-text-fill-color: transparent;
-    // line-height: 1em;
-    font-size: 6em;
-    margin: 3em 0 0;
-    // text-align: center;
-    // text-transform: uppercase;
+
+
+    // method 2
+    // font-size: 6em;
+    // margin: 2em 0 0;
+
 
 
     // @include breakpoint('xsmall'){
@@ -39,24 +41,26 @@
     //   font-size: 8em;
     // }
     // @include breakpoint('xlarge'){
-    //   margin-top: 2em;
-    //   font-size: 12em;
+      margin-top: 2em;
+      font-size: 10em;
+      // font-size: 12em;
     // }
   }
   .hero-subname{
     color: $white;
     @include heading();
     // font-size: 10em;
-    // line-height: 1em;
     width: 100%;
     clear: both;
     // padding: 2em 0;
     position: relative;
     // min-height: 25em;
-    font-size: 6em;
-    margin: 0 0 2em;
-    // text-align: center;
-    // text-transform: uppercase;
+
+    //mthod 2
+    // font-size: 6em;
+    // margin: 0 0 2em;
+
+
     // @include breakpoint('xsmall'){
     //   font-size: 3em;
     // }
@@ -67,7 +71,8 @@
     //   font-size: 8em;
     // }
     // @include breakpoint('xlarge'){
-    //   font-size: 10em;
+      // font-size: 10em;
+      font-size: 9em;
     // }
   }
   .rw-words{
