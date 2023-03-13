@@ -85,11 +85,11 @@
           font-size: 43px;
         }
         @include breakpoint('xsmall'){
-          font-size: 43px;
-        }
-        @include breakpoint('small'){
           font-size: 4em;
         }
+        // @include breakpoint('small'){
+        //   font-size: 4em;
+        // }
         .outline-text{
           -webkit-text-stroke: 1px $darkGray;
           -webkit-text-fill-color: transparent;

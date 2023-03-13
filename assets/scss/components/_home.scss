@@ -314,13 +314,23 @@
           line-height: 24px;
         }
         @include breakpoint('xsmall'){
-          font-size: 18px;
-          line-height: 24px;
-        }
-        @include breakpoint('small'){
           font-size: 24px;
           line-height: 30px;
         }
+        blockquote{
+          @include breakpoint('mbl'){
+            font-size: 18px;
+            line-height: 24px;
+          }
+          @include breakpoint('xsmall'){
+            font-size: 24px;
+            line-height: 30px;
+          }
+        }
+        // @include breakpoint('small'){
+        //   font-size: 24px;
+        //   line-height: 30px;
+        // }
 
       }
       .links{
@@ -370,20 +380,35 @@
           }
           .name{
             @include heading();
-          	font-size: 30px;
+
           	color: $fresh;
-          	line-height: 35px;
+
             text-align: left;
+            @include breakpoint('mbl'){
+              font-size: 24px;
+              line-height: 24px;
+            }
+            @include breakpoint('small'){
+              font-size: 30px;
+              line-height: 35px;
+            }
             .city{
               color:#000;
             }
           }
           .position{
             @include paragraph();
-          	line-height: 30px;
-          	font-size: 24px;
-          	padding: 10px 0 0 0;
+          	// font-size: 24px;
+          	// padding: 10px 0 0 0;
           	text-align: left;
+            @include breakpoint('mbl'){
+              font-size: 18px;
+              line-height: 24px;
+            }
+            @include breakpoint('small'){
+              font-size: 30px;
+              line-height: 30px;
+            }
           }
         }
       }
@@ -415,15 +440,14 @@
           }
           .companyHeading{
             @include heading(700);
-
             letter-spacing: -1px;
           	color: $fresh;
             text-align: left;
             // margin-bottom: 0;
             // -webkit-text-fill-color: $darkGray;
             @include breakpoint('mbl'){
-              font-size: 28px;
-              line-height:  28px;
+              font-size: 24px;
+              line-height:  24px;
             }
             @include breakpoint('xsmall'){
               font-size: 28px;
@@ -447,8 +471,8 @@
             text-align: left;
             margin-bottom: 0.5em;
             @include breakpoint('mbl'){
-              font-size: 20px;
-              line-height: 28px;
+              font-size: 18px;
+              line-height: 24px;
             }
             @include breakpoint('xsmall'){
               font-size: 20px;
@@ -912,12 +936,20 @@
   .closeX {
     position: relative;
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    // width: 40px;
+    // height: 40px;
     overflow: hidden;
     float: right;
     background: transparent;
     border: none;
+    @include breakpoint('mbl'){
+      width: 30px;
+      height: 30px;
+    }
+    @include breakpoint('xsmall'){
+      width: 40px;
+      height: 40px;
+    }
     &:hover {
       &::before, &::after {
         background: $sunshine;
@@ -976,11 +1008,11 @@
   .tech{
     color: $gray;
     @include heading();
-
+    text-align: center;
     margin: 10px 0 15px;
     -webkit-text-fill-color: $darkGray;
     @include breakpoint('mbl'){
-      font-size: 24px;
+      font-size: 20px;
     }
     @include breakpoint('xsmall'){
       font-size: 24px;
@@ -996,7 +1028,9 @@
   .description{
     p{
       text-align: center;
-      @include breakpoint('mbl'){}
+      @include breakpoint('mbl'){
+        font-size: 0.9em;
+      }
       @include breakpoint('xsmall'){
         font-size: 14px;
       }
@@ -1018,7 +1052,7 @@
       @include breakpoint('mbl'){
         width: 80%;
         display: block;
-        margin: 15px auto;
+        margin: 10px auto;
       }
       @include breakpoint('xsmall'){
         width: 80%;
