@@ -18,9 +18,8 @@
       font-size: 3em;
     }
     @include breakpoint('xsmall'){
-      margin-top: 10em;
-      // font-size: 3em;
-      font-size: 3em;
+      margin-top: 8em;
+      font-size: 4em;
     }
     @include breakpoint('small'){
       margin-top: 6em;
@@ -51,7 +50,7 @@
       font-size: 3em;
     }
     @include breakpoint('xsmall'){
-      font-size: 3em;
+      font-size: 3.5em;
     }
     @include breakpoint('small'){
       font-size: 4em;
@@ -126,7 +125,7 @@
     @include breakpoint('xsmall'){
       margin-top: 10em;
     }
-    @include breakpoint('large'){
+    @include breakpoint('medium'){
       margin-top: 13em;
     }
     .material-symbols-outlined{
