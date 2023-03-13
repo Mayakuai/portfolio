@@ -17,6 +17,7 @@
           color: $darkGray;
           padding-left: 0;
           padding-right: 0;
+          @include transOnly(250ms,ease-in-out);
           &:hover{
             color: $black;
             &::after{
@@ -26,6 +27,7 @@
           }
           &.active{
             color: $black;
+            @include transOnly(250ms,ease-in-out);
             &::after{
               transform: scaleX(1);
               transform-origin: bottom;
@@ -99,12 +101,6 @@
     }
   }
   ul {
-    // &:hover {
-    //   a {
-    //     opacity: 0.5;
-    //   }
-    // }
-
     a.mobile-nav-link {
       -webkit-transform: translateZ(0);
       @include transOnly(250ms,ease-in-out);
@@ -115,61 +111,29 @@
       position: relative;
       cursor: pointer;
       margin: 20px;
-
-      color: $white;
+      color: $vermillion;
       // -webkit-text-stroke: 0.5px #353535;
       // text-shadow: .04em .04em 0 #9cb8b3;
-      text-shadow: .04em .04em 0 $darkGray;
+      // text-shadow: .04em .04em 0 $darkGray;
       font-size: 2.5rem;
-      font-weight: bold;
+      font-weight: 900;
       text-decoration: none;
       text-transform: uppercase;
-
       &::before{
         transition: height 0.5s ease-in;
         content: attr(data-text);
         position: absolute;
         overflow: hidden;
         height: 2.5rem;
-        color: $vermillion;
+        color: $white;
         left: 0;
         top: 0;
       }
       &:hover {
-        // opacity: 1;
-        // &::after{
-        //   -webkit-transform-origin: left top;
-        //   -ms-transform-origin: left top;
-        //   transform-origin: left top;
-        //   -webkit-transform: scale(1, 1);
-        //   -ms-transform: scale(1, 1);
-        //   transform: scale(1, 1);
-        // }
         &::before{
           height: 0;
         }
-
       }
-      // &::after{
-      //   bottom: 24%;
-      //   z-index: -1;
-      //   display: block;
-      //   height: 8px;
-      //   content: '';
-      //   position: absolute;
-      //   left: 0px;
-      //   width: 100%;
-      //   background: $vermillion;
-      //   display: block;
-      //   -webkit-transform-origin: right top;
-      //   -ms-transform-origin: right top;
-      //   transform-origin: right top;
-      //   -webkit-transform: scale(0, 1);
-      //   -ms-transform: scale(0, 1);
-      //   transform: scale(0, 1);
-      //   -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-      //   transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-      // }
     }
   }
 
@@ -239,6 +203,7 @@
     }
   }
   &.active {
+    @include transOnly(250ms,ease-in-out);
     span {
       background: transparent;
       transition: background 0.2s ease-out;

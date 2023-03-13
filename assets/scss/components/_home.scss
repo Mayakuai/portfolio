@@ -11,7 +11,7 @@
     -webkit-text-fill-color: transparent;
     line-height: 1em;
     @include breakpoint('xsmall'){
-      margin-top: 12em;
+      margin-top: 7em;
       font-size: 3em;
     }
     @include breakpoint('small'){
@@ -479,7 +479,7 @@
               }
               @include breakpoint('medium'){
                 margin: 15px 15px 5px 0px;
-                width: 213px;
+                width: fit-content;
               }
               &.widerLI{
                 width: 300px;
@@ -546,14 +546,15 @@
               	text-align: left;
               	vertical-align: middle;
               	@include transOnly(250ms,ease-in-out);
-                @include breakpoint('xsmall'){
-                  // margin: 5px;
-                  width: 175px;
-                }
-                @include breakpoint('medium'){
-                  // margin: 15px 15px 5px 0px;
-                  width: 213px;
-                }
+                width: 213px;
+                // @include breakpoint('xsmall'){
+                //   // margin: 5px;
+                //   width: 175px;
+                // }
+                // @include breakpoint('medium'){
+                //   // margin: 15px 15px 5px 0px;
+                //
+                // }
               }
             }
           }
@@ -931,6 +932,7 @@
 #contact{
   background: $sunshine;
   // background: $white;
+  padding-bottom: 200px;
   .talk-name{
     color: $darkGray;
     @include heading();
