@@ -1115,10 +1115,30 @@
           -webkit-text-fill-color: transparent;
         }
       }
-
     }
     p{
       text-align: center;
+    }
+    .icon-row{
+      padding-top: 25px;
+      a{
+        i{
+          font-size: 24px;
+          border-radius: 100px;
+          border: 1px solid $darkGray;
+          display: inline-block;
+          width: 55px;
+          height: 55px;
+          line-height: 55px;
+          margin: 5px;
+          color: $darkGray;
+          @include transOnly(250ms,ease-in-out);
+          &:hover{
+            color: $sunshine;
+            background: $darkGray;
+          }
+        }
+      }
     }
   }
 }

@@ -101,7 +101,7 @@
 
   a {
       text-decoration: none;
-      border-bottom: solid 1px transparent;
+      // border-bottom: solid 1px transparent;
       @include transOnly(250ms,ease-in-out);
       color:inherit;
   }
