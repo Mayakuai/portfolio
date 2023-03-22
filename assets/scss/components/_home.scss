@@ -770,7 +770,6 @@
           box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
           -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
           -moz-box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
-          // @include shading(0 2px 10px ,$darkGray);
           @include breakpoint('mbl'){
             width: 330px;
           }
@@ -1010,7 +1009,7 @@
     color: $gray;
     @include heading();
     text-align: center;
-    margin: 10px 0 15px;
+    margin: 15px 0;
     -webkit-text-fill-color: $darkGray;
     @include breakpoint('mbl'){
       font-size: 20px;
@@ -1024,6 +1023,11 @@
     .outline-text{
       -webkit-text-stroke: 1px $darkGray;
       -webkit-text-fill-color: transparent;
+    }
+    .sunshine-fill{
+      color: $sunshine !important;
+      // -webkit-text-stroke: 1px $darkGray;
+      -webkit-text-fill-color: $sunshine;
     }
   }
   .description{
