@@ -768,6 +768,9 @@
         img{
           height: auto;
           box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+          -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+          -moz-box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+          // @include shading(0 2px 10px ,$darkGray);
           @include breakpoint('mbl'){
             width: 330px;
           }
