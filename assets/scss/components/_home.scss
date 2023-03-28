@@ -404,9 +404,12 @@
               font-size: 18px;
               line-height: 24px;
             }
-            @include breakpoint('small'){
-              font-size: 30px;
+            @include breakpoint('xsmall'){
+              font-size: 24px;
               line-height: 30px;
+            }
+            span{
+              color: $gray2;
             }
           }
         }
@@ -479,6 +482,12 @@
             @include breakpoint('medium'){
               font-size: calc(1.325rem + .9vw);
               line-height: 40px;
+            }
+            span{
+              color: $gray2;
+            }
+            .sunshineSpan{
+              color: $sunshine;
             }
           }
           ul{
@@ -901,6 +910,23 @@
     width:80%;
     height:85%;
     padding: 50px;
+    // top: 15%;
+    // left: 10%;
+    // width: 80%;
+    // height: 70%;
+    // padding: 50px;
+  }
+  @include breakpoint('medium'){
+    top:10%;
+    left:10%;
+    width:80%;
+    height:85%;
+    padding: 50px;
+    // top: 10%;
+    // left: 10%;
+    // width: 80%;
+    // height: 70%;
+    // padding: 50px;
   }
   &::before{
     position: absolute;
@@ -945,10 +971,14 @@
     @include breakpoint('mbl'){
       width: 30px;
       height: 30px;
+      margin-top: -15px;
+      margin-right: -15px;
     }
     @include breakpoint('xsmall'){
       width: 40px;
       height: 40px;
+      margin-top: -30px;
+      margin-right: -30px;
     }
     &:hover {
       &::before, &::after {
@@ -983,6 +1013,12 @@
     }
   }
   .title{
+    @include breakpoint('mbl'){
+      margin-top: 0px;
+    }
+    @include breakpoint('medium'){
+      margin-top: 20px;
+    }
     h2{
       color: $gray;
       @include heading();
@@ -991,12 +1027,15 @@
       -webkit-text-fill-color: transparent;
       text-align: left;
       @include breakpoint('mbl'){
-        font-size: 3em;
+        font-size: 2.0em;
       }
       @include breakpoint('xsmall'){
-        font-size: 3em;
+        font-size: 2.5em;
       }
       @include breakpoint('small'){
+        font-size: 2.5em;
+      }
+      @include breakpoint('medium'){
         font-size: 4em;
       }
       .outline-text{
@@ -1009,16 +1048,24 @@
     color: $gray;
     @include heading();
     text-align: center;
-    margin: 15px 0;
+
     -webkit-text-fill-color: $darkGray;
     @include breakpoint('mbl'){
-      font-size: 20px;
+      font-size: 18px;
+      margin: 10px 0;
     }
     @include breakpoint('xsmall'){
-      font-size: 24px;
+      // font-size: 24px;
+      // font-size: 18px;
+      // margin: 10px 0;
     }
     @include breakpoint('small'){
+      // font-size: 2em;
+      // margin: 20px 0;
+    }
+    @include breakpoint('medium'){
       font-size: 2em;
+      margin: 20px 0;
     }
     .outline-text{
       -webkit-text-stroke: 1px $darkGray;
@@ -1031,9 +1078,11 @@
     }
   }
   .description{
+
     p{
-      text-align: center;
+      text-align: left;
       @include breakpoint('mbl'){
+        padding-top: 10px;
         font-size: 0.9em;
       }
       @include breakpoint('xsmall'){
@@ -1042,22 +1091,50 @@
       @include breakpoint('small'){
         font-size: 1em;
       }
+      ul{
+        li{
+          font-size: 14px;
+        }
+      }
+    }
+    .sunshineText{
+      color: $sunshine;
     }
   }
-  .images{
+  .image{
+    text-align: center;
     img{
-      width: 400px;
       height: auto;
+      @include breakpoint('mbl'){
+        width: 70%;
+
+      }
+      @include breakpoint('xsmall'){
+        width: 300px;
+
+      }
+      @include breakpoint('medium'){
+        width: 300px;
+
+      }
+      @include breakpoint('large'){
+        width: 400px;
+      }
     }
   }
+  width: 80%;
   .links{
+    padding-top: 20px;
     text-align: center;
     .button {
       @include transOnly(250ms,ease-in-out);
       @include breakpoint('mbl'){
-        width: 80%;
-        display: block;
-        margin: 10px auto;
+        // width: 80%;
+        // display: block;
+        // margin: 10px auto;
+        width: 45%;
+        display: inline-block;
+        margin: 10px 5px;
       }
       @include breakpoint('xsmall'){
         width: 80%;
